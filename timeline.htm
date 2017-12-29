@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap 4 Timeline</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="en" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="author" content="Mario Lurig" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	 <style>
+	 /* Timeline */
+	.timeline {position: relative;}
+	.timeline-line{position:absolute;width:4px;display:block;background:currentColor;top:60px;bottom:10px;margin-left:-18px}
+	.timeline-line::before{top:-4px}
+	.timeline-line::after{bottom:-4px}
+	.timeline-line::after,.timeline-line::before{content:'';position:absolute;left:-4px;width:12px;height:12px;display:block;border-radius:50%;background:currentColor}
+	.timeline-separator{border-top:2px solid currentColor;padding:15px 5px 10px 40px;margin-left:-15px;margin-top:40px}
+	.timeline-separator h3{margin-left:-18px}
+	.timeline-icon{margin: 10px 0 0 -7px;height:1.8em;width:1.8em}
+	.card-header{border-bottom:5px solid}
+	 </style>
+ </head>
+
+ <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light pb-0">
+    </nav>
+
+    <main role="main" class="container py-5 timeline">	
+		<p>This changelog format is based on <a href="http://keepachangelog.com/en/1.0.0/" target="_blank" rel="noopener noreferrer">Keep a Changelog</a> and adheres to <a href="http://semver.org/spec/v2.0.0.html" target="_blank" rel="noopener noreferrer">Semantic Versioning</a>.</p>
+		<!-- Line component -->
+		<div class="timeline-line text-muted"></div>
+
+		<div class="timeline-separator">
+			<h3 class='version text-capitalize' id='unreleased'>unreleased  
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="fill:#333333" viewBox="0 0 8 8"><path d="M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z" transform="translate(1)" /></svg> 
+				<span class='text-muted'>In-Progress</span>
+			</h3>
+		</div>
+		<div class='row'>
+			<div class="card-group mx-2 mx-md-0 w-100">
+				<svg class='timeline-icon text-secondary pull-left d-none d-md-block' xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"><path d="M0 0v8l4-4-4-4z" style="fill:#868E96;" transform="translate(2)" /></svg>
+				<div class="card">
+					<h6 class='card-header border-secondary font-italic text-capitalize'>unreleased</h6>
+					<ul class='list-group list-group-flush small'>
+						<li class='list-group-item'>First unreleased feature.</li>
+						<li class='list-group-item'>Next unreleased feature.</li>
+					</ul>
+				</div>
+			</div><!--card-group-->
+		</div><!--row-->
+		<div class="timeline-separator">
+			<h3 class='version text-capitalize' id='0-2-0'>0.2.0  
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="fill:#333333" viewBox="0 0 8 8"><path d="M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z" transform="translate(1)" /></svg> 
+				<span class='text-muted'>2017-12-23</span>
+			</h3>
+		</div>
+		<div class='row'>
+			<div class="card-group mx-2 mx-md-0 w-100">
+				<svg class='timeline-icon text-secondary pull-left d-none d-md-block' xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"><path d="M0 0v8l4-4-4-4z" style="fill:#868E96;" transform="translate(2)" /></svg>
+				<div class="card">
+					<h6 class='card-header border-primary font-italic text-capitalize'>added</h6>
+					<div class='card-body'>
+						<h4 class='card-title text-capitalize'>New Feature Title</h4>
+						<p class='card-text'>Description of the new feature.</p>
+					</div>
+						<ul class='list-group list-group-flush small'>
+							<li class='list-group-item'>List of features.</li>
+							<li class='list-group-item'>List of features.</li>
+						</ul>
+				</div>
+				<div class="card">
+					<h6 class='card-header border-info font-italic text-capitalize'>changed</h6>
+						<ul class='list-group list-group-flush small'>
+							<li class='list-group-item'>List of changes.</li>
+							<li class='list-group-item'>List of changes.</li>
+						</ul>
+				</div>
+				<div class="card">
+					<h6 class='card-header border-success font-italic text-capitalize'>fixed</h6>
+					<ul class='list-group list-group-flush small'>
+						<li class='list-group-item'>List of fixes.</li>
+						<li class='list-group-item'>List of fixes.</li>
+					</ul>
+				</div>
+			</div><!--card-group-->
+		</div><!--row-->
+		<div class="timeline-separator">
+			<h3 class='version text-capitalize' id='0-1-0'>0.1.0  
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="fill:#333333" viewBox="0 0 8 8"><path d="M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z" transform="translate(1)" /></svg> 
+				<span class='text-muted'>2017-12-22</span>
+			</h3>
+		</div>
+		<div class='row'>
+			<div class="card-group mx-2 mx-md-0 w-100">
+				<svg class='timeline-icon text-secondary pull-left d-none d-md-block' xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"><path d="M0 0v8l4-4-4-4z" style="fill:#868E96;" transform="translate(2)" /></svg>
+				<div class="card">
+					<h6 class='card-header border-primary font-italic text-capitalize'>added</h6>
+					<div class='card-body'>
+						<h4 class='card-title text-capitalize'>Feature Title</h4>
+						<p class='card-text'>Description of a new feature.</p>
+					</div>
+						<ul class='list-group list-group-flush small'>
+							<li class='list-group-item'>List of features.</li>
+							<li class='list-group-item'>List of features.</li>
+							<li class='list-group-item'>List of features.</li>
+						</ul>
+				</div>
+			</div><!--card-group-->
+		</div><!--row-->
+		<div class="timeline-separator">
+			<h3 class='version text-capitalize' id='0-0-1'>0.0.1  <i class='fal fa-angle-double-right'></i> <span class='text-muted'>2017-04-01</span></h3>
+		</div>
+		<div class='row'>
+			<div class="card-group mx-2 mx-md-0 w-100">
+				<svg class='timeline-icon text-secondary pull-left d-none d-md-block' xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"><path d="M0 0v8l4-4-4-4z" style="fill:#868E96;" transform="translate(2)" /></svg>
+				<div class="card">
+					<h6 class='card-header border-primary font-italic text-capitalize'>added</h6>
+					<div class='card-body'>
+						<h4 class='card-title text-capitalize'>Feature Title</h4>
+						<p class='card-text'>Description of a new feature.</p>
+					</div>
+				</div>
+				<div class="card">
+					<h6 class='card-header border-info font-italic text-capitalize'>changed</h6>
+					<ul class='list-group list-group-flush small'>
+						<li class='list-group-item'>Item changed.</li>
+						<li class='list-group-item'>Item changed.</li>
+						<li class='list-group-item'>Item changed.</li>
+					</ul>
+				</div>
+				<div class="card">
+					<h6 class='card-header border-success font-italic text-capitalize'>fixed</h6>
+					<ul class='list-group list-group-flush small'>
+						<li class='list-group-item'>List of bug fixes.</li>
+						<li class='list-group-item'>List of bug fixes.</li>
+					</ul>
+				</div>
+				<div class="card">
+					<h6 class='card-header border-dark font-italic text-capitalize'>security</h6>
+					<div class='card-body'>
+						<p class='card-text'>Public acknowledgement of any confirmed security vulnerabilities.</p>
+					</div>
+					<div class='card-footer'>
+						<small><em><strong class='text-capitalize'>credit: </strong> <a href="https://mariolurig.com/">Mario Lurig</a></em></small>
+					</div>
+				</div>
+				<div class="card">
+					<h6 class='card-header border-warning font-italic text-capitalize'>deprecated</h6>
+					<div class='card-body'>
+						<h4 class='card-title'>Feature Title</h4><p class='card-text'>Description and reasoning for soon-to-be-removed features.</p>
+					</div>
+					<div class='card-footer'>
+						<small><em><strong class='text-capitalize'>removal: </strong> 2017-12-01</em></small>
+					</div>
+				</div>
+				<div class="card">
+					<h6 class='card-header border-danger font-italic text-capitalize'>removed</h6>
+					<div class='card-body'>
+						<h4 class='card-title'>Feature Title</h4><p class='card-text'>Full description of removed feature.</p>
+					</div>
+					<div class='card-footer'>
+						<small><em><strong class='text-capitalize'>deprecated: </strong> <a href='#0-0-1'>0.0.1</a></em></small>
+					</div>
+				</div>
+			</div><!--card-group-->
+		</div><!--row-->
+	
+
+	</main><!-- /.container -->
+	
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	</body>
+</html>
