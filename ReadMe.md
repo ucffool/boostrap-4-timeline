@@ -20,7 +20,7 @@ Makes primary use of the [Bootstrap 4 card component](https://getbootstrap.com/d
 [MIT License](https://opensource.org/licenses/MIT)
 
 ## Contact
-#### Developer/Company
+#### Developer
 * Homepage: https://mariolurig.com/
 * Email: mariolurig@gmail.com
 * Twitter: [@ucffool](https://twitter.com/ucffool "ucffool on twitter")
