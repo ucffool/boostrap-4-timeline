@@ -10,7 +10,7 @@ Makes primary use of the [Bootstrap 4 card component](https://getbootstrap.com/d
 [HeroMuster.com Changelog](https://heromuster.com/changelog)
 
 ## Uses 
-* [Bootstrap 4.0.0-beta2](https://getbootstrap.com/docs/4.0/getting-started/introduction/) (CDN links included in example)
+* [Bootstrap 4.0.0](https://getbootstrap.com/docs/4.0/getting-started/introduction/) (CDN links included in example)
 * SVGs provided by the [OpenIconic](https://github.com/iconic/open-iconic) project.
 
 ## Version 
